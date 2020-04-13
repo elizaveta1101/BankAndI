@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Банк и Я</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Oswald:300&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="home">
+        <div class="overlay"></div>
+        <header class="header">
+            <a href="#" class="header__logo"></a>
+            <nav class="header__nav">
+                <a href="#" class="header__nav__item">Вопрос-Ответ</a>
+                <a href="#" class="header__nav__item">Статьи</a>
+                <a href="#" class="header__nav__item">О Проекте</a>
+                <a href="#" class="header__nav__item">Услуги</a>
+                <a href="#" class="header__nav__item">Форум 2020</a>
+            </nav>
+            <div class="header__contacts">
+                <a href="tel:+78005502042" class="header__contacts__phone">+7 (800) 550-20-42</a>
+                <a href="tel:+74992130776" class="header__contacts__phone">+7 (499) 213-07-76</a>
+            </div>
+            <div class="header__nav__open"></div>
+            <nav class="header__nav--hidden">
+                <button class="header__nav__close"></button>
+                <a href="#" class="header__nav__item">Вопрос-Ответ</a>
+                <a href="#" class="header__nav__item">Статьи</a>
+                <a href="#" class="header__nav__item">О Проекте</a>
+                <a href="#" class="header__nav__item">Услуги</a>
+                <a href="#" class="header__nav__item">Форум 2020</a>
+            </nav>
+        </header>
+        <div class="main">
+            <h1 class="main__title">Первый форум<br>"Банк и Я"</h1>
+            <h1 class="main__date">20.02.2020</h1>
+            <p class="main__subtitle">Международный выставочный центр<br>"Крокус Экспо"</p>
+            <button class="main__btn btn" href="#registration">Принять участие</button>
+            <button class="main__arrow" href="#about"></button>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h2 class="about__title">О форуме</h2>
+        <p class="about__text">Форум «Банк и Я» - Первая площадка для установления прямого диалога между потребителями и ключевыми производителями на арене банковского сегмента.</p>
+        <h3 class="about__subtitle">Цель</h3>
+        <p class="about__text">Донести до потребителей банковских услуг безопасность и правильность ведения всех расчетов через банковские структуры и развеять миф, что банки «злостно» блокируют деньги клиентов, пользуясь 115 ФЗ.</p>
+        <h3 class="about__subtitle">Задача</h3>
+        <p class="about__text">Показать, что добросовестные потребители банковских услуг могут беспрепятственно и комфортно работать на современном банковском рынке.</p>
+    </div>
+    <div class="directions">
+        <h2 class="directions__title">Тематические направления</h2>
+        <div class="directions__cards">
+            <div class="card card1"></div>
+            <div class="card card2">
+                <p class="card__text">Правда и миф о 115 ФЗ</p>
+            </div>
+            <div class="card card3">
+                <p class="card__text">Обзор сложившейся экономической ситуации</p>
+            </div>
+            <div class="card card4">
+                <p class="card__text">Рекомендации по работе с банком</p>
+            </div>
+            <div class="card card5">
+                <p class="card__text">Кредиты и вклады для юридических и физических лиц</p>
+            </div>
+            <div class="card card6">
+                <p class="card__text">Обзор практики по вкладам и выплатам АСВ</p>
+            </div>
+            <div class="card card7">
+                <p class="card__text">Дополнительные банковские услуги</p>
+            </div>
+            <div class="card card8">
+                <p class="card__text">Обзор рынка ценных бумаг</p>
+            </div>
+        </div>
+    </div>
+    <div class="registration" id="registration">
+        <h2 class="registration__title">Международный выставочный центр<br>«Крокус Экспо»</h2>
+        <p class="registration__address">Московская область, Красногорский район, г. Красногорск,<br>ул. Международная, д. 16. Павильон № 2, этаж 2</p>
+        <form action="#" class="registration__form">
+            <input type="text" placeholder="Имя" required>
+            <input type="tel" placeholder="Телефон" id="phone" required><br>
+            <button type="submit" class="btn">Регистрация</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <a href="#" class="footer__logo"></a>
+        <div class="footer__contacts">
+            <a href="tel:88005502042" class="footer__contacts__phone">+7 (800) 550-20-42</a>
+            <a href="tel:84992130776" class="footer__contacts__phone">+7 (499) 213-07-76</a>
+            <a href="mailto:Info@Unblock.Money" class="footer__contacts__email">Info@Unblock.Money</a>
+        </div>
+        <div class="footer__icons">
+            <a href="#" class="icon icon--vk"></a>
+            <a href="#" class="icon icon--inst"></a>
+            <a href="#" class="icon icon--you"></a>
+            <a href="#" class="icon icon--fb"></a>
+            <a href="#" class="icon icon--tg"></a>
+        </div>
+    </footer>
+    
+    <script src="./js/inputmask.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

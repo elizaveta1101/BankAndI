@@ -1,0 +1,140 @@
+@import 'variables';
+
+.footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 110px;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 255px);
+    grid-template-rows: 100px;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    align-content: center;
+    
+    &__logo {
+        background: url(../img/logo2.svg) center center no-repeat;
+        background-size: contain;
+    }
+
+    &__contacts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, max-content);
+        grid-auto-flow: column;
+        align-content: center;
+        &__phone, &__email {
+            justify-self: center;
+            margin: 0;
+            text-transform: capitalize;
+            font-family: 'Oswald', sans-serif;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(5,45px);
+        grid-template-rows: 30px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-self: center;
+
+        .icon {
+            margin-right: 15px;
+            &--vk {
+                background: url(../img/icons/vk.svg) center center no-repeat;
+                background-size: contain;
+            }
+            &--inst {
+                background: url(../img/icons/instagram.svg) center center no-repeat;
+                background-size: contain;
+            }
+            &--you {
+                background: url(../img/icons/youtube.svg) center center no-repeat;
+                background-size: contain;
+            }
+            &--fb {
+                background: url(../img/icons/facebook.svg) center center no-repeat;
+                background-size: contain;
+            }
+            &--tg {
+                background: url(../img/icons/telegram.svg) center center no-repeat;
+                background-size: contain;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .footer {
+        height: 150px;
+        margin-top: 110px;
+        grid-template-columns: repeat(3, 120px);
+
+        &__contacts {
+            grid-template-rows: repeat(3, max-content);
+            &__phone, &__email {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        &__icons {
+            grid-template-columns: repeat(5,25px);
+            grid-template-rows: 25px;
+            .icon {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media @tablet--small {
+    .footer {
+        height: 200px;
+        margin-top: 110px;
+        grid-template-columns: repeat(3, 200px);
+
+        &__contacts {
+            grid-template-rows: repeat(3, max-content);
+            &__phone, &__email {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        &__icons {
+            grid-template-columns: repeat(5,25px);
+            grid-template-rows: 25px;
+            .icon {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media @tablet--big {
+    .footer {
+        height: 200px;
+        margin-top: 110px;
+        grid-template-columns: repeat(3, 200px);
+
+        &__contacts {
+            &__phone, &__email {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__icons {
+            grid-template-columns: repeat(5,30px);
+            grid-template-rows: 30px;
+            .icon {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+

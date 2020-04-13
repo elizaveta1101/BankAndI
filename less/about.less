@@ -1,0 +1,76 @@
+@import 'variables';
+
+.about {
+    max-width: 35%;
+    margin: 0 auto;
+    color: @BLACK;
+    text-align: center;
+    &__title {
+        font-family: HelveticaRoman;
+        font-size: 48px;
+        margin: 100px 0 80px;
+    }
+    &__subtitle {
+        font-family: HelveticaRoman;
+        font-size: 24px;
+        line-height: 24px;
+        margin: 70px 0 54px;
+    }
+    &__text {
+        font-family: HelveticaNormal;
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+@media @mobile {
+    .about {
+        max-width: 70%;
+        &__title {
+            font-size: 27px;
+            margin: 50px 0 40px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 35px 0 25px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 27px;
+        }
+    }
+}
+@media @tablet--small, @tablet--big {
+    .about {
+        max-width: 55%;
+        &__title {
+            font-size: 30px;
+            margin: 55px 0 40px;
+        }
+        &__subtitle {
+            font-size: 21px;
+            line-height: 24px;
+            margin: 40px 0 25px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+}
+@media @tablet--big {
+    
+}
+@media @laptop {
+    .about {
+        max-width: 55%;
+        &__title {    
+            font-size: 43px;
+            margin: 75px 0 40px;
+        }
+        &__subtitle {
+            margin: 55px 0 35px;
+        }
+    }
+}

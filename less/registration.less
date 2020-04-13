@@ -1,0 +1,99 @@
+@import 'variables';
+
+.registration {
+    max-width: 45%;
+    text-align: center;
+    margin: 0 auto;
+
+    &__title {
+        font-family: HelveticaRoman;
+        font-size: 48px;
+        margin-top: 140px;
+    }
+    &__address {
+        font-family: HelveticaNormal;
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 70px;
+    }
+    &__form {
+        margin-top: 70px;
+        input {
+            width: 80%;
+            height: 60px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid @BLACK;
+            font-size: 18px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            color: @BLACK;
+        }
+        input::placeholder {
+            font-size: 18px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            color: @BLACK;
+        }
+    }
+}
+
+@media @mobile,  @tablet--small {
+    .registration {
+        max-width: 75%;
+        &__title {
+            font-size: 34px;
+            margin-top: 100px;
+        }
+        &__address {
+            font-size: 19px;
+            line-height: 27px;
+            margin-top: 50px;
+            letter-spacing: 0.01em;
+        }
+        &__form {
+            margin-top: 50px;
+            input::placeholder {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media @tablet--big {
+    .registration {
+        max-width: 65%;
+        &__title {
+            font-size: 37px;
+            margin-top: 110px;
+        }
+        &__address {
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 65px;
+        }
+        &__form {
+            margin-top: 50px;
+            input {
+                width: 70%;
+            }
+            input::placeholder {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media @laptop {
+    .registration {
+        max-width: 65%;
+        &__title {
+            font-size: 42px;
+            margin-top: 125px;
+        }
+        &__address {
+            font-size: 22px;
+            line-height: 30px;
+            margin-top: 65px;
+        }
+    }
+}
